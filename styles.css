@@ -1,0 +1,40 @@
+
+html {
+  font: color red;
+  background-color: rgb(154, 154, 154);
+}
+.titles {
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+}
+
+ {
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgb(154,154,154);
+  font-family: monospace;
+}
+
+.feet {
+  display: flex;
+  flex-direction: row;
+ }
+
+.div {
+  size: 20px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  background: black;
+  color: rgb(154,154,154);
+  text-align: center;
+  flex-basis: auto;
+}
+
+.a {
+  background-color: green;
+}
