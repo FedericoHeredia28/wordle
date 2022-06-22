@@ -2,7 +2,7 @@
 // es un array de strings (dict por dictionary)
 const intentos = 6;
 let intentosRestantes = intentos;
-let intentoActual = "perro";
+let act = "perro";
 let siguienteLetra = 0;
 let dict = [
   'gatos',
@@ -30,18 +30,30 @@ let dict = [
   'menta'
 ];
 
-let r = Math.random() * 21;
-r = Math.trunc(r);
-let correcto = dict[r]
-if (correcto == intentoActual) alert("se");
-let i = 0;
-for (let i = 0; i < 6; i++) {
-  let div = document.createElement('div');
-  div.textContent = i;
-  for (let c == of intentoActual) {
-    if (c == intentoActual) {
-      div.classList.add('a');
-    }
+function button(e) {
+  let f = Math.trunc(Math.random() * 23);
+  let correcto = 'perro';
+  let inp = document.getElementById('inp').value;
+  console.log(inp);
+  for (var i = 0; i < 1; i++) {
+    let row = document.createElement('div');
+    row.className = "tabla";
+    for (var j = 0; j < 5; j++) {
+      let box = document.createElement('div');
+      box.textContent = inp[j];
+     if (correcto.includes(act[j])) {
+       box.style.backgroundColor = 'yellow';
+     } else {
+       box.style.backgroundColor = 'grey';
+     }
+     if (correcto[j] == inp[j]) {
+       box.style.backgroundColor = 'green';
+     }
+     box.className = 'box';
+     row.appendChild(box);
+   }
+   // inp.appendChild(row);
+   // if (correcto == inp) {
+   //   document.getElementById('win').style.display
+   }
   }
-  document.body.append(div);
-}
